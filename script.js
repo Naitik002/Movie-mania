@@ -1,7 +1,7 @@
 let btn = document.querySelector("button");
 let movediv = document.querySelector("div");
 
-const url = "http://www.omdbapi.com/?apikey=dc36c99f&s="
+const url = "https://www.omdbapi.com/?apikey=dc36c99f&s="
 
 
 let getMovies = async (movie) => {
@@ -40,7 +40,7 @@ btn.addEventListener("click", async () => {
                 movediv.appendChild(card);
 
         });
-        
+
     } catch (error) {
         movediv.innerHTML = "<p>Something went wrong. Please try again later.</p>";
     }
